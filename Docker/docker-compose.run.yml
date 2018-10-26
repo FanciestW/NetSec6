@@ -4,9 +4,6 @@ services:
     privileged: true
     container_name: web_box
     image: fanciestw/web_box
-    build:
-      context: .
-      dockerfile: www.Dockerfile
     expose:
       - "80"
     networks:
@@ -15,9 +12,6 @@ services:
   ssh_box:
     container_name: ssh_box
     image: fanciestw/ssh_box
-    build:
-      context: .
-      dockerfile: ssh.Dockerfile
     expose:
       - "22"
     networks:
@@ -27,9 +21,6 @@ services:
   box3:
     container_name: box3
     image: fanciestw/box3
-    build:
-      context: .
-      dockerfile: ssh.Dockerfile
     expose: 
       - "22"
     ports:
