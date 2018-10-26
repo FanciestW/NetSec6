@@ -1,4 +1,4 @@
-FROM ubuntu:latest
+FROM ubuntu:16.04
 
 RUN apt-get update && apt-get install -y openssh-server net-tools vim curl wget
 RUN mkdir /var/run/sshd
